@@ -1,0 +1,74 @@
+.formulario{
+  width: 1000px;
+  background-color: #DDA0DD;
+  color: white;
+  }
+.tabela{
+  max-width: 1000px;
+  background-color: #DDA0DD;
+}
+.btn{
+  max-width: 500px;
+   background-color: #DA70D6;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0px #999;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   position: relative;
+   overflow: hidden;
+}
+.botao{
+   background-color: #DA70D6;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0px #999;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   position: relative;
+   overflow: hidden;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+  color: #C71585;
+}
+td{
+  width: 100px; 
+}
+
+.linha1{
+  text-align: right;
+  background-color: #DA70D6;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0px #999;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   position: relative;
+   overflow: hidden;
+}

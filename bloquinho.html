@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bloco de Notas</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+div{
+  width: 50%
+}
+    </style>
+  </head>
+  <body> 
+  <link rel="stylesheet" type="text/css" href="sss.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script> 
+    var numLinha = 0;
+    function adicionar(){
+      numLinha ++;
+        var guardar = document.form.tela.value;
+
+           var primeiro = "<tr><td>" + guardar + "</td>";
+           var segundo = "<td  id='tabelaLinha" + numLinha + "'><input type='button' class='linha1' value='x' onClick=\"javascript:remove('tabelaLinha"+numLinha+"')\"></input>";
+
+                 document.getElementById("table").innerHTML += primeiro + segundo;
+                 document.getElementById("table").innerHTML += "</td></tr>";
+
+           }
+            function remove(id){
+
+               teste = document.getElementById(id);
+               teste.parentNode.parentNode.removeChild(teste.parentNode);
+}   
+</script>
+    <center>
+    <h1><b>Bloco de notas</b></h1>
+    <form name="form" method="post" class="formulario">
+    <table class="tabela" id="table" >
+
+      <tr>
+     <td ><input type="text" class="btn" name="painel"  id="tela" placeholder="Adicione a nota"/></td> 
+      <td ><input type="button" name="add" class="botao" value="Add" onclick="adicionar()" /></td>
+      </tr>
+    </table>
+   </form>
+</center>
+</body>
+</html>
